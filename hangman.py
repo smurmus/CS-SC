@@ -75,11 +75,13 @@ while (guesses < 6 and counterTwo != 0):
         print(character + " IS in the secret word." + "\n")
         counterTwo = counterTwo - 1
         hangman_graphic(guesses)
+        print("\n")
     else:
         print("%s is NOT in the secret word." % character)
         print("That is incorrect guess #" + str(guesses + 1) + ".\n")
         guesses = guesses + 1
         hangman_graphic(guesses)
+        print("\n")
 
 if (counterTwo == 0):
     print("You got it!")
