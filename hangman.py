@@ -72,7 +72,7 @@ while (guesses < 6 and counterTwo != 0):
     character = str(input("Enter a letter: "))
 
     if (isCharInString(str(secretWord), character)):
-        print(character + " IS in the secret word." + "\n")
+        print(character + " IS in the secret word at index " + str(secretWord.index(character)) + "\n")
         counterTwo = counterTwo - 1
         hangman_graphic(guesses)
         print("\n")
